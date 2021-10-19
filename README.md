@@ -13,5 +13,5 @@ Se puede ver en la siguiente URL: https://equirozvasco.github.io/Juego_de_memori
 El link del repositorio es el siguiente: https://github.com/EquirozVasco/Juego_de_memoria
 También pudes descargarlo desde consola, eligiendo el directorio donde lo quieres y luego usando el comando: git clone https://github.com/EquirozVasco/Juego_de_memoria.git
 
-Diagrama de flujo:
+Diagrama de flujo: https://github.com/EquirozVasco/Juego_de_memoria/blob/main/Diagrama%20de%20flujo.drawio.png
 
