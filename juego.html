@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Memoria</title>
+</head>
+<body>
+    <header>
+        <h1>Juego de Memoria</h1>
+        <p>Debes estar atento a la palabra para luego escribirla...</p>
+    </header>
+    <section>
+        <h2>¡Reta tu retentiva!</h2>
+        <button type="button" onclick="Iniciar()" id='btnIniciar'>
+            Iniciar Juego
+        </button>
+        <label for="laPalabra" id="lblPalabra">
+            Acá va la palabra
+        </label>
+        <input type="text" id="Palabra" hidden/>
+        <button type="button" id="btnPalabra" onclick="verificarRespuesta()" hidden>
+            Comprobar respuesta
+        </button>
+    </section>
+    <script src="./index.js"></script>
+</body>
+</html>
