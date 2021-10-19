@@ -3,7 +3,7 @@ let level2 =['Ventilador','Espacio','Orwell','Maleta','Recibo','Everlong'];
 let level3 =['Alexander Dumas','Yuri Gagarin','Montaña Helada','Quentin tarantino','Foo Fighters','These days'];
 let quemados=[];
 let aciertos = 0;
-let desaciertos = 0;
+//let desaciertos = 0;
 let level = 1;
 
 const Iniciar = () =>{
@@ -38,13 +38,16 @@ const verificarRespuesta = ()=>{
                 nuevaPalabra(level);
             }else{
                 level+=1;
+                if (level>3){
+                    level=3;
+                }
                 aciertos=0;
                 nuevaPalabra(level);
             }
         }else{
             alert('Respuesta Inorrecta-Prepárate para la siguiente');
             aciertos=0;
-            desaciertos+=1;
+            //desaciertos+=1;
             if(level>1){
                 level-=1;
             }
