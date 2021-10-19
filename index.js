@@ -3,6 +3,7 @@ let level2 =['Ventilador','Espacio','Orwell','Maleta','Recibo','Everlong'];
 let level3 =['Alexander Dumas','Yuri Gagarin','Montaña Helada','Quentin tarantino','Foo Fighters','These days'];
 let quemados=[];
 let aciertos = 0;
+let desaciertos = 0;
 let level = 1;
 
 const Iniciar = () =>{
@@ -43,6 +44,7 @@ const verificarRespuesta = ()=>{
         }else{
             alert('Respuesta Inorrecta-Prepárate para la siguiente');
             aciertos=0;
+            desaciertos+=1;
             if(level>1){
                 level-=1;
             }
@@ -76,12 +78,6 @@ const nuevaPalabra=(level)=>{
     document.getElementById('lblPalabra').innerHTML=arreglo[indice];
     setTimeout(ocultarPalabra,wordTime);    
 };
-
-const repetidos=()=>{
-    indice = Aleatorio(0,tam_arreglo);
-    
-    quemados.push(indice);
-}
 
 const Aleatorio = (min,max) => {
     return Math.floor(Math.random() * (max - min)) + min;
